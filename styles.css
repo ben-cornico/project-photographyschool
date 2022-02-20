@@ -23,6 +23,15 @@ ul {
   color: #ffffff;
 }
 
+.title {
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
 /* ******************************************************************* */
 /*NAVBAR LOGO DESIGN  */
 .navbar-logo {
@@ -49,16 +58,26 @@ ul {
 .navbar-list {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .navbar-item {
   padding: 1.5rem 1.5rem;
 }
 
+.navbar-item:hover {
+  background-color: #937ea5;
+}
+
 .btn-apply-now {
   padding: 1rem 1.5rem;
   border: none;
   background-color: #a30000;
+  cursor: pointer;
+}
+
+.btn-apply-now:hover {
+  background-color: #920000;
 }
 
 /* *********************************************************** */
@@ -80,4 +99,46 @@ ul {
 .headline {
   font-size: 4.5rem;
   font-weight: bold;
+}
+
+/* *************************************** */
+
+/* Courses */
+.courses {
+  display: flex;
+  overflow: visible;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+/* **************************** */
+/* course card */
+.course-card {
+  height: 200px;
+  width: 530px;
+  display: flex;
+  gap: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 2px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.course-info {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 5px;
+  justify-content: space-between;
+}
+
+.btn-more-info {
+  width: 140px;
+  padding: 0.5rem;
+  border: none;
+  background-color: #655a7c;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.btn-more-info:hover {
+  background-color: #353141;
 }
