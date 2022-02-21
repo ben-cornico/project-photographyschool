@@ -1,3 +1,8 @@
+/* delete this after */
+.just-another-div {
+  margin: 20rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -106,18 +111,21 @@ body {
 /* Courses */
 .courses {
   display: flex;
-  overflow: visible;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: flex-start;
   margin: 0 auto;
+  justify-content: space-around;
 }
 
 /* **************************** */
 /* course card */
 .course-card {
+  margin: 1rem auto;
   height: 200px;
   width: 530px;
   display: flex;
   gap: 12px;
+  overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 2px 0 rgba(0, 0, 0, 0.19);
   border-radius: 15px;
   background-color: #ffffff;
@@ -141,4 +149,60 @@ body {
 
 .btn-more-info:hover {
   background-color: #353141;
+}
+
+.btn-load-more {
+  border: none;
+  background-color: #e2e2e2;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+}
+
+.btn-load-more:hover {
+  background-color: #d1d1d1;
+}
+
+.offers {
+  padding: 1rem;
+  margin: 2rem auto;
+}
+/* ***************************** */
+/* OFFER CARD LIST */
+.offer-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* OFFER CARD */
+.offers {
+  background-color: #010101;
+}
+
+.offer-card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: #ffffff;
+}
+
+.offer-card > .info {
+  text-align: justify;
+  margin: 0 1.25rem;
+}
+
+.offer-card > * {
+  margin: 0.5rem 0.25rem;
+}
+
+.offer-title {
+  text-align: center;
+}
+
+.btn-card {
+  align-self: stretch;
+  margin: 1rem auto;
+  padding: 0.5rem 0;
+  width: 180px;
+  background-color: #920000;
+  border: none;
 }
