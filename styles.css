@@ -206,3 +206,59 @@ body {
   background-color: #920000;
   border: none;
 }
+
+/* ********************* */
+/* MIssion and Vision */
+.mission-vision {
+  margin: 2rem;
+  text-align: justify;
+}
+
+/* ********************* */
+/* STAFF and STAFF CARD*/
+.staff-list {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.staff-card {
+  position: relative;
+  width: 340px;
+}
+
+.staff-img {
+  width: 100%;
+}
+
+.staff-info {
+  position: absolute;
+  bottom: 1%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0, 0.5); /* this is for see through effect */
+  width: 100%;
+  color: #ffffff;
+  transition: 0.5s ease;
+  opacity: 0;
+  text-align: center;
+  padding: 1.25rem;
+}
+
+.staff-card:hover .staff-info {
+  opacity: 1;
+}
+
+/* *********** */
+/* FOOTER */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #010101;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+}
