@@ -114,11 +114,16 @@ body {
 
 /* Courses */
 .courses {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   margin: 0 auto;
-  justify-content: space-around;
+  justify-content: space-around; */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(530px, 1fr));
+  grid-template-rows: auto;
+  gap: 0.5rem;
 }
 
 /* **************************** */
@@ -126,7 +131,6 @@ body {
 .course-card {
   margin: 1rem auto;
   height: 200px;
-  width: 530px;
   display: flex;
   gap: 12px;
   overflow: hidden;
